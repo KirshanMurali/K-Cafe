@@ -1,0 +1,75 @@
+.caption {
+    color:#000000;
+    font-size:22;
+    font-family: myFirstFont;
+    text-align:center;
+    src: url(sansation_light.woff);
+}
+
+body {
+    background-image: url("/static/foodBackground.jpg");
+    background-color:#FFF;
+}
+a {
+    font-size:50;
+    text-align: center;
+    color:#535456;
+}
+
+div {
+   font-family: myFirstFont;
+}
+p {
+    font-size:22;
+    color:red;
+}
+
+h2 {
+    font-size:40px;
+    font-family:"lucida console";
+    text-align:center;
+    line-height:50%;
+    color:red;
+}
+
+form {
+    height:25px;
+    width:25px;
+    text-align: center;
+    color:#000000;
+}
+
+.image {
+   height:200px;
+   width:100%;
+   
+   border:10px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+ul li {
+  list-style:none;
+  margin-bottom:25px;
+}
+ul li img {
+  cursor: pointer;
+}
+.index {
+    font-size:22;
+}

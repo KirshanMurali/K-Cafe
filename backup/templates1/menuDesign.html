@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    
+    <form action="/setMenu" method="POST">
+    {% for name,item in mainMenu.items() %}
+    <input type="checkbox" value={{item['foodname']}} name={{item['foodname']}}> {{item['foodname']}}<br>
+    {% endfor %}
+      
+      <input type="submit" value="Submit">
+    </form>
+    
+    </body>
+</html>

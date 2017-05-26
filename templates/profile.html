@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <div>Username:{{user['username']}}</div>
+        <div>Email:{{user['email']}}</div> 
+        <div>Date Of Birth:{{user['DOB']}}</div>
+        <div>Votes:{{user['voteID']}}</div>
+        <div>Date Of Registration:{{user['regDate']}}</div>
+        <div>Nationality:{{user['nationality']}}</div>
+        <div>questionID:{{user['questionsID']}}</div>
+        <div>answersID:{{user['answersID']}}</div>
+        
+        <form action="/edit" method="post">
+            <input type="submit" value="Edit" action="/edit">
+        </form>
+        
+    </body>
+</html>

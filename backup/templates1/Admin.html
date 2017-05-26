@@ -1,0 +1,33 @@
+<html>
+     <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/kCafe.css" rel="stylesheet">
+         
+    <style type="text/css">
+    a {
+    color:#d7a00;
+    }
+     </style>
+     
+
+    </head>
+    <body>
+        <a href = '/signup/0'>Add a New User!</a>
+        <br>
+        <a href = '/menuDesign'>Set Up The Menu!</a>
+        <br>
+        <a href = '/getOrder' class="hvr-back-pulse">Get Orders!</a>
+        <br>
+        <p>Session Status is {{sessionStatus}}</p>
+        {% if sessionStatus=='Close' %}
+        <form action = '/OpenSession' method = 'POST'>
+        <input type = 'Submit' value = 'Open Session'>
+        </form>
+        {% else %}
+        <form action = '/CloseSession' method = 'POST'>
+        <input type = 'Submit' value = 'Close Session'>
+        </form>
+        {% endif %}
+        
+    </body>
+</html>

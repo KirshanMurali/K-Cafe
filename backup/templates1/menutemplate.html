@@ -1,0 +1,25 @@
+<html>
+    <head>
+       <title>Home Page</title>
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/kCafe.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="w3-container">
+            <p>{{username}}</p>
+            <img src={{userimage}}></img>
+            <a href="/signOut" target="_blank">Sign out</a>
+        </div>
+        </div>
+        
+        <ul>
+            {% for food in menuItems %}
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <a href="/order/{{food['foodname']}}">
+                  <img class="image img-circle" src={{food['foodimage']}}>
+                    <p class="caption">{{food['foodname']}}</p></a>
+            </li>
+            {% endfor %}
+        </ul>        
+    </body>
+</html>

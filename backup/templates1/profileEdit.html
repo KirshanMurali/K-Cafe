@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Email</title>
+    </head>
+    <body>
+        <div>{% if message %}
+        <p style='color:red;font-size:20px'> {{message}} </p>
+        {% endif %}
+        </div>
+        <div>Username:{{username}}</div>
+        <form action="/editExecuter" method="post">
+            <p>email:</p>
+            <input type="text" name="email"/>
+            <p>password:</p>
+            <input type="password" name="password"/>
+            <p>confirm password:</p>
+            <input type="password" name="confirmPassword"/>
+            <p>nationality:</p>
+            <input type="text" name="nationality"/>
+            <input type="submit" name="Submit"/>
+            
+        </form>
+    </body>
+</html>
